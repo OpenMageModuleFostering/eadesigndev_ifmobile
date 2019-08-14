@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Eadesigndev_Ifmobile</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Extension license name (OSL v3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The extension will add the possibility to check if the browsing is done from mobile devices. Also if you enable and add the fields in the system/configuration you will be able to separate ski css/js.</summary>
+    <description>The extension will add the possibility to check the browsing type. If mobile or desktop device is used.&#xD;
+It can also change the css and js in the skin folder to be loaded based on visitors type. You can use the fields in the system/configuration to set the folders you want the css to be loaded differently. </description>
+    <notes>Tested.</notes>
+    <authors><author><name>EaDesign</name><user>eadesign</user><email>office@eadesign.ro</email></author></authors>
+    <date>2016-05-04</date>
+    <time>09:57:28</time>
+    <contents><target name="magelocal"><dir name="Eadesigndev"><dir name="Ifmobile"><dir name="Block"><dir name="Page"><dir name="Html"><file name="Head.php" hash="7ec727a1841061c7b599dc6d851880d2"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="954546a0c5340a4a9a63680a718ee45e"/><file name="Detect.php" hash="215bb72447bc7adeb39d407642ffc540"/></dir><dir name="Model"><dir name="Design"><file name="Package.php" hash="68e7502e8bdeaf8e3d7c9a58b309a8fd"/></dir></dir><dir name="etc"><file name="config.xml" hash="f46d6c13caab2a5b0539b20c2768dd1f"/><file name="system.xml" hash="8bd3425105ac592a95b79c065a4f42ff"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Eadesigndev_Ifmobile.xml" hash="3245ed2ce5882a0ade28d03369c16bf8"/></dir></target><target name="magelib"><dir name="Eadesigndev"><dir name="Ifmobile"><file name="Mobile_Detect.php" hash="5a857bb93447137ad2e70d05190e3b08"/></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="eadesigndev"><dir name="ifmobile"><file name="subfooter.phtml" hash="feb79b47f68b56cdc45628122a273933"/></dir></dir></dir><dir name="layout"><dir name="eadesigndev"><file name="ifmobile.xml" hash="fa6a04962014eef02dfbe242e51b753f"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.7.0</max></php></required></dependencies>
+</package>

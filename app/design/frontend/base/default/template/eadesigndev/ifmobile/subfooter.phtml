@@ -1,0 +1,48 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: andrei
+ * Date: 3/23/2016
+ * Time: 10:18 AM
+ */
+?>
+<div class="sub-footer-wrapper" xmlns="http://www.w3.org/1999/html">
+    <div class="sub-footer">
+        <?php if (!Mage::helper('ifmobile/detect')->isMobile()) : ?>
+            <?php if (Mage::helper('ifmobile/detect')->wantsMobile()) : ?>
+                <div class="varianta-desktop">
+                    <a class="set-mobile" id="set-mobile" href="#">mobile version</a>
+                </div>
+
+            <?php endif; ?>
+
+        <?php else: ?>
+            <a class="set-desktop" id="set-desktop" href="#">desktop version</a>
+        <?php endif; ?>
+    </div>
+</div>
+<script type="text/javascript">
+
+
+    var desktop = $('set-desktop');
+    if (desktop != null) {
+        $('set-desktop').observe('click', function (e) {
+            e.preventDefault();
+            document.cookie = "wantsdesktop=1";
+            location.reload();
+        });
+    }
+
+    var mobile = $('set-mobile');
+    if (mobile != null) {
+        $('set-mobile').observe('click', function (e) {
+            e.preventDefault();
+            delete_cookie('wantsdesktop');
+            location.reload();
+        });
+    }
+
+    var delete_cookie = function (name) {
+        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    };
+</script>

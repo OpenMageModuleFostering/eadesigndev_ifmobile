@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Eadesigndev_Ifmobile>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Eadesigndev_Ifmobile>
+    </modules>
+</config>

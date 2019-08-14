@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Eadesigndev_Ifmobile",
+    "type": "magento-module",
+    "license": "Extension-license-name-(OSL-v3.0)",
+    "homepage": "",
+    "description": "The extension will add the possibility to check if the browsing is done from mobile devices. Also if you enable and add the fields in the system/configuration you will be able to separate ski css/js.",
+    "authors": [
+    {
+        "name": "EaDesign",
+        "email": "office@eadesign.ro"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <eadesigndevconfig translate="label" module="ifmobile">
+            <label>EaDesign</label>
+            <sort_order>999</sort_order>
+        </eadesigndevconfig>
+    </tabs>
+
+    <sections>
+        <ifmob_settings translate="label" module="ifmobile"> <!--Sections meniu stanga activ cu click-->
+            <label>EaDesign Mobile Detect</label>
+            <tab>eadesigndevconfig</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <ifmob_opt translate="label">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Activat</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <desk_css translate="label" module="core">
+                            <label>Desktop css folder</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Ex: "css". Only the theme (type_skin) folders are used.  ]]></comment>
+                        </desk_css>
+                        <mob_css translate="label" module="core">
+                            <label>Mobile css folder</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Ex: "mobile_css". Only the theme (type_skin) folders are used.]]></comment>
+                        </mob_css>
+                        <desk_js translate="label" module="core">
+                            <label>Desktop js folder</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Ex: "js". Only the theme (type_skin) folders are used.  ]]></comment>
+                        </desk_js>
+                        <mob_js translate="label" module="core">
+                            <label>Mobile js folder</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Ex: "mobile_js". Only the theme (type_skin) folders are used.  ]]></comment>
+                        </mob_js>
+                    </fields>
+                </ifmob_opt>
+            </groups>
+        </ifmob_settings>
+    </sections>
+</config>

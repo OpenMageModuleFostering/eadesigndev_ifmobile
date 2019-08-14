@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+/**
+ * EaDesgin
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@eadesign.ro so we can send you a copy immediately.
+ *
+ * @category    custom_ext_code
+ * @copyright   Copyright (c) 2008-2016 EaDesign by Eco Active S.R.L.
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Eadesigndev_Ifmobile>
+            <version>1.0.1</version>
+        </Eadesigndev_Ifmobile>
+    </modules>
+    <global>
+        <helpers>
+            <ifmobile>
+                <class>Eadesigndev_Ifmobile_Helper</class>
+            </ifmobile>
+        </helpers>
+        <blocks>
+            <page>
+                <rewrite>
+                    <html_head>Eadesigndev_Ifmobile_Block_Page_Html_Head</html_head>
+                </rewrite>
+            </page>
+            <ifmobile>
+                <class>Eadesigndev_Ifmobile_Block</class>
+            </ifmobile>
+        </blocks>
+        <models>
+            <core>
+                <rewrite>
+                    <design_package>Eadesigndev_Ifmobile_Model_Design_Package</design_package>
+                </rewrite>
+            </core>
+            <ifmobile>
+                <class>Eadesigndev_Ifmobile_Model</class>
+            </ifmobile>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <pdfgen module="Eadesigndev_Ifmobile">
+                    <file>eadesigndev/ifmobile.xml</file>
+                </pdfgen>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <ifmob_settings>
+                                            <title>EaDesign SMS</title>
+                                        </ifmob_settings>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>
