@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Eadesigndev_Ifmobile",
+    "name": "openmage-module-fostering\/eadesigndev_ifmobile",
     "type": "magento-module",
-    "license": "Extension-license-name-(OSL-v3.0)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "The extension will add the possibility to check if the browsing is done from mobile devices. Also if you enable and add the fields in the system\/configuration you will be able to separate ski css\/js.",
     "authors": [

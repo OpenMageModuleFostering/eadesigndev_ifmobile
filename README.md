@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 The extension will add the possibility to check if the browsing is done from mobile devices. Also if you enable and add the fields in the system/configuration you will be able to separate ski css/js.
